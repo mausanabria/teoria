@@ -29,7 +29,7 @@ const preguntas = [
     "¿Qué representa el color rojo del cinturón?",
     "Diferencias entre Arte Marcial y Deporte",
     "Historia del Taekwon-Do Argentino",
-    ",Secciones del Cuerpo",
+    "Secciones del Cuerpo",
     "Significado y Cantidad de Movimientos del Choong-Moo",
     "¿Qué Representa el Color Negro del Cinturón?",
 ];
@@ -37,7 +37,7 @@ const preguntas = [
 const urls = {
     "Diferencias entre Arte Marcial y Deporte":"rojoptanegra.html#diferencias-entre-Arte-marcial-y-deporte",
     "Historia del Taekwon-Do Argentino":"rojoptanegra.html#historia-del-taekwon-Do-argentino",
-    ",Secciones del Cuerpo":"rojoptanegra.html#secciones-del-cuerpo",
+    "Secciones del Cuerpo":"rojoptanegra.html#secciones-del-cuerpo",
     "Significado y Cantidad de Movimientos del Choong-Moo":"rojoptanegra.html#significado-y-cantidad-de-movimientos-del-choong-moo",
     "¿Qué Representa el Color Negro del Cinturón?":"rojoptanegra.html#¿Que-Representa-el-Color-Negro-del-Cinturon?",
 }
