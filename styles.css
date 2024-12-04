@@ -99,7 +99,7 @@ header .logo img {
 .section {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 40%;
     border-width: 5px;
     border-style: solid;
     border-color: black; 
@@ -112,6 +112,7 @@ header .logo img {
 .resumen{
     margin: 0;
     margin-bottom: 5px;
+    text-align: center;
 }
 
 .subtitulo{
@@ -246,4 +247,38 @@ header .logo img {
 
 .btn:hover >.text{
     color: black;
+}
+
+
+
+@media (max-width: 768px) {
+
+
+    header .logo img{
+        width: 150px;
+        margin-top: 0;
+    }
+
+    header h1{
+        font-size: 25px;
+        margin-top: 50px;
+    }
+
+    .search-container {
+        width: 80%;
+    }
+
+    .subtitulo{
+        font-size: 15px;
+    }
+
+
+    .section{
+        width: 95%;
+    }
+
+    .resumen{
+font-size: 15px;
+    }
+
 }
