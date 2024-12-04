@@ -1,0 +1,171 @@
+/* Estilos generales */
+html{
+    overscroll-behavior: none;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #8b0000;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+
+
+section {
+    background: white;
+    margin: 20px auto;
+    margin-left: 20%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 70%;
+    text-align: justify;
+}
+
+section h2 {
+    color: #8b0000;
+    margin-top: 0;
+    text-align: left;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    position: relative;
+    bottom: 0;
+    font-size: 15px;
+}
+
+/* Estilo para las imágenes */
+
+.contenedor-imagen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+section img {
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0;
+    left: 50%;
+}
+
+.secciones img{
+    width: 700px;   
+}
+
+.diagrama img{
+    width: 200px;  
+    margin-bottom: 0; 
+}
+
+
+/* Estilos para listas */
+ul {
+    padding-left: 20px;
+}
+
+/* Sección con fondo diagonal de líneas */
+.right-bar {
+    position: fixed;
+    top: 0;
+    right: 0px;
+    width: 50px;
+    height: 100vh;
+    background: linear-gradient(45deg,#000000 14%,  #db2d2d 39%  , #8b0000 57%);  
+}
+
+.left-bar {
+    position: fixed;
+    left: 0;
+    width: 15%;
+    height: auto; 
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 15px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 70%;
+}
+
+.navbar h2 {
+    color: #8b0000;
+    margin-top: 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar ul li {
+    margin-top: 10px;
+}
+
+.navbar ul li a {
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 15px;
+    transition: all 0.3s ease; /* Transición suave */
+    border-radius: 5px; /* Esquinas redondeadas */
+    padding: 10px;
+    
+}
+
+.navbar ul li a:hover {
+    background-color: #852525;
+    color: white; /* Texto negro al pasar el cursor */
+}
+
+
+
+/* Media Queries para diseño responsivo */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 15px;
+        margin-right: 30px;
+        margin-left: 10%;
+
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .right-bar {
+        width: 20px;
+}
+.left-bar{
+    display: none;
+}
+}

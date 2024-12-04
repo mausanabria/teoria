@@ -1,0 +1,249 @@
+
+html{
+    overscroll-behavior: none;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: linear-gradient(135deg, #e0e0e0, #cfcfcf); /* Degradado gris */
+    background-attachment: fixed; /* Fondo fijo al hacer scroll */
+    background-size: cover;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+
+.logo {
+    position:absolute; /* Hace que el logo sea fijo */
+    left: 5%;
+    z-index: 1001; /* Asegura que el logo esté por encima de la barra */
+    background-image: url('martial.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    mix-blend-mode: screen; /* Esto eliminará las áreas negras, manteniendo las letras blancas */
+}
+
+header .logo img {
+    width: 300px;
+}
+
+
+/*BUSCADOR*/
+
+.search-container {
+    position: relative;
+    width: 50%;
+    margin: 20px auto;
+    margin-bottom: 50px;
+}
+
+.search-box {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    color: #272727;
+    font-weight: 500;
+}
+
+
+.suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 100;
+    display: none;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.suggestion-item:hover {
+    background: #f0f0f0;
+}
+
+.suggestion-item:last-child {
+    border-bottom: none;
+}
+
+    /*GRADUACIONES*/
+
+.graduations{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+.section {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black; 
+    align-items: center;
+    border-radius: 20px;
+    position: relative;
+    align-items: center;
+}
+
+.resumen{
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.subtitulo{
+    font-family: edo;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.subtitulo, .resumen, .button-more, .fondo-translucido{
+    z-index: 10; /* Coloca la superposición sobre la imagen */
+}
+
+.fondo-translucido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.3); /* Blanco translúcido */
+    border-radius: 10px; /* Alineado con el borde del contenedor */
+    padding: 10px;
+}
+
+
+.blanco{
+    background: linear-gradient(135deg, #F8F8FF, #F8F8FF); /* Blanco translúcido */
+    z-index: 20;
+}
+
+.blanco-pta-amarillo{
+    background: linear-gradient(45deg, #F8F8FF 14%,  #ffe600 39%, #F8F8FF 57%); /* Corte brusco en diagonal */
+    z-index: 20;
+}   
+
+.amarillo{
+    background: linear-gradient(135deg, #f6fca6, #ffe600); /* Degradado de amarillo */
+    z-index: 20;
+}
+
+.amarillo-pta-verde{
+    background: linear-gradient(45deg ,#ffe600 14%, #2cd231 39%, #ffe600 57%); /* Degradado de amarillo a verde intenso */
+    z-index: 20;
+}
+
+.verde{
+    background: linear-gradient(135deg, #A7F3D0, #065F46); /* Degradado verde */
+    z-index: 20;
+}
+
+.verde-pta-azul{
+    background: linear-gradient(45deg ,#168465 14%, #3254b0 39%, #168465 57%); /* Degradado de amarillo a verde intenso */
+    z-index: 20;
+}
+
+.azul{
+    background: linear-gradient(135deg, #60A5FA, #1E3A8A); /* Degradado azul a rojo intenso */
+    z-index: 20;
+}
+
+
+.azul-pta-roja{
+    background: linear-gradient(45deg, #60A5FA 14%,#d34343 39%,  #3879c7 57%); /* Degradado azul a rojo intenso */
+    z-index: 20;
+}
+
+.rojo{
+    background: linear-gradient(135deg, #f0a2a2, #d34343); /* Degradado rojo */
+    z-index: 20;
+}
+
+.rojo-pta-negra{
+    background: linear-gradient(45deg,  #d34343 14%,#0000009a 39%,   #d34343 57%); /* Degradado azul a rojo intenso */
+    z-index: 20;
+}
+
+
+    /*BOTONES*/
+
+
+
+    
+.btn{
+    all:unset;
+    padding: 0.5rem 2rem;
+    text-transform: uppercase;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 25px 0 15px 0;
+}
+
+.btn > .circle{
+    --size: 2.5rem;
+    position: absolute;
+    left: 0;
+    display: block;
+    width: var(--size);
+    height: var(--size);
+    background-color: #ded8f4;
+    border-radius: 1.5rem;
+    z-index: -1;
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+}
+
+.btn > .text {
+    margin-left: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all 0.45s;
+}
+
+.circle > i{
+    font-size: 1rem;
+    position: absolute;
+    left: calc(var(--size)/2);
+    top: calc(var(--size)/2);
+    transform: translate(-50%,-50%);
+    color: black;
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+}
+
+.btn:hover >.circle {
+    width: 100%;
+}
+
+.btn:hover >.circle > i {
+    translate: 1rem 0;
+}
+
+.btn:hover >.text{
+    color: black;
+}
