@@ -35,11 +35,11 @@ const preguntas = [
 ];
 
 const urls = {
-    "Diferencias entre Arte Marcial y Deporte":"rojoptanegra.html",
-    "Historia del Taekwon-Do Argentino":"rojoptanegra.html",
-    ",Secciones del Cuerpo":"rojoptanegra.html",
-    "Significado y Cantidad de Movimientos del Choong-Moo":"rojoptanegra.html",
-    "¿Qué Representa el Color Negro del Cinturón?":"rojoptanegra.html",
+    "Diferencias entre Arte Marcial y Deporte":"rojoptanegra.html#diferencias-entre-Arte-marcial-y-deporte",
+    "Historia del Taekwon-Do Argentino":"rojoptanegra.html#historia-del-taekwon-Do-argentino",
+    ",Secciones del Cuerpo":"rojoptanegra.html#secciones-del-cuerpo",
+    "Significado y Cantidad de Movimientos del Choong-Moo":"rojoptanegra.html#significado-y-cantidad-de-movimientos-del-choong-moo",
+    "¿Qué Representa el Color Negro del Cinturón?":"rojoptanegra.html#¿Que-Representa-el-Color-Negro-del-Cinturon?",
 }
 
 
