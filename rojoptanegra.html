@@ -22,7 +22,7 @@
                     <li><a href="#diferencias-entre-Arte-marcial-y-deporte">Diferencias entre Arte Marcial y deporte</a></li>
                     <li><a href="#historia-del-taekwon-Do-argentino">Historia del taekwon-Do Argentino</a></li>
                     <li><a href="#secciones-del-cuerpo">Secciones del Cuerpo</a></li>
-                    <li><a href="#significado-y-cantidad-de-movimientos-del-choong-moo">Significado y Cantidad de movimientos del Choong-moo</a></li>
+                    <li><a href="#significado-y-cantidad-de-movimientos-de-choong-moo">Significado y Cantidad de movimientos del Choong-moo</a></li>
                     <li><a href="#¿Que-Representa-el-Color-Negro-del-Cinturon?">¿Que Representa el Color Negro del Cinturon?</a></li>
                 </ul>
             </nav>
@@ -50,7 +50,7 @@
             </ul>
             <p>Los HWARANG DO llegaron a ser conocidos por su coraje y destreza. Se ganaron el respeto de sus mayores enemigos. Este grupo eleva a Silla y, de esta forma, Corea llego a unirse por primera vez</p>
             <div class="contenedor-imagen">
-                <img src="./koguryo.jpg" alt="koguryo map">
+                <img src="./img/koguryo.jpg" alt="koguryo map">
             </div>
             <p>Hay evidencia que muestra la existencia de lucha con pies y manos durante ese periodo, tanto en Silla como en Koguryo. En el periodo de los HWARANG DO, el arte original de  lucha se lo denominaba SOOBAK. Existían unos festejos anuales en los cuales se realizaban competencias se Soobak, juegos de lucha Coreana, competencias de tiro con cuerdas, Taek Kyon, competencias de salto y Yeki Chagi. Debido a lo alcanzado por los HWARANG DO, junto a sus 5 reglas, el Soobak del nuevo concepto físico mental alcanzo un nivel de arte, y se lo denomino SOOBAK GI.</p>
             <p>Muchos documentos históricos parecen indicar que algunas de estas formas de lucha a mano abierta pudieron haber sido llevadas a Japón y constituir la base para el jiu jitsu japonés (SIRUM – lucha coreana para el judo) y el Karate. Los HWARANG DO coreanos pueden haber sido los precursores de los famosos Samurái de Japón.
@@ -61,7 +61,7 @@
             El estilo Chang Hun está basado en 24 tuls, cada uno desarrollado y perfeccionados por el Gral. Choi Hong Hi, y sus colegas, desde el tul de cinturón blanco Chon- ji, hasta el más elevado (tul de 6º Dan): el Tong Il.</p>
             <p>Después de 1300 años el arte marcial coreano ha alcanzado completa maduración y se ha extendido, desde una pequeña banda de jóvenes guerreros, a más de 138 países con millones de estudiantes. La combinación de las técnicas clásicas antiguas y las nuevas modificaciones que fue incorporando han dado como resultado una forma de defensa propia y acondicionamiento mental inigualados en el mundo entero.</p>
             <div class="contenedor-imagen">
-                <img src="./pintura-historia.jpg" alt="pintura antigua">
+                <img src="./img/pintura-historia.jpg" alt="pintura antigua">
                 <p>Pintura rural que presenta a dos
                 jóvenes en una lucha en
                 donde es posible apreciar movimientos
@@ -80,7 +80,7 @@
                 <li>Baja: bajo el ombligo (Najunde).</li>
             </ul>
             <div class="contenedor-imagen secciones">
-                <img src="./secciones-del-cuerpo.png" alt="secciones del cuerpo">
+                <img src="./img/secciones-del-cuerpo.png" alt="secciones del cuerpo">
             </div>
             <p>Además de las secciones altas, medias y bajas, el cuerpo se divide lateralmente en:</p>
             <ul>
@@ -89,16 +89,16 @@
                 <li>C: Línea del hombro.</li>
             </ul>
             <div class="contenedor-imagen">
-                <img src="./secciones-del-cuerpo-lineal.png" alt="secciones del cuerpo">
+                <img src="./img/secciones-del-cuerpo-lineal.png" alt="secciones del cuerpo">
             </div>
         </section>
 
-        <section id="significado-y-cantidad-de-movimientos-del-choong-moo">
+        <section id="significado-y-cantidad-de-movimientos-de-choong-moo">
             <h2>Significado y Cantidad de Movimientos del Choong-Moo</h2>
             <p>Choong-Moo fue el nombre dado al gran almirante Yi Soon-Sin de la dinastía Joseon. Él tenía la reputación de haber inventado el primer barco acorazado (kobukson) en 1592, que fue el precursor del submarino de hoy en día. La razón del porqué este Tul termina con el ataque de mano izquierda, simboliza su muerte sin tener oportunidad de poder demostrar su potencialidad al rey.</p>
             <l>Esta forma tiene 30 Movimientos y el tul abre hacia el lado izquierdo y cierra hacia el izquierdo.</p>
             <div class="contenedor-imagen diagrama">
-                <img src="./DChoong-Moo.jpg" alt="Diagrama CHOONG-MOO">
+                <img src="./img/DChoong-Moo.jpg" alt="Diagrama CHOONG-MOO">
                 <P>Diagrama</P>
             </div>
         </section>
@@ -117,5 +117,22 @@
             <p>&copy; 2024 All Rights Reserved - Martial Challenge</p>
         </div>
     </footer>
+
+
+    <script>
+    
+    window.addEventListener('load', () => {
+        const hash = window.location.hash;
+        if (hash) {
+            const target = document.querySelector(hash);
+            if (target) {
+                const offset = 20; // Ajusta este valor para compensar
+                const top = target.getBoundingClientRect().top + window.scrollY - offset;
+                window.scrollTo({ top, behavior: 'smooth' });
+            }
+        }
+    });
+    
+    </script>
 </body>
 </html>
